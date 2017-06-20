@@ -16,6 +16,10 @@ class PrimesTestCase(unittest.TestCase):
 		"""Is zero correctly determined not to be prime?"""
 		self.assertFalse(is_prime(0), msg='Zero is not prime!')
 
+	def test_is_one_thousand_prime(self):
+		"""Is 1,000 correctly determined not to be prime?"""
+		self.assertFalse(is_prime(1000), msg='1,000 is not prime!')
+
 	def test_negative_number(self):
 		"""Is a negative number correctly determined not to be prime?"""
 		for index in range(-1, -10, -1):
