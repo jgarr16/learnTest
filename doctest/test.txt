@@ -1,0 +1,28 @@
+This is a sample doctest that checks Python's math operations. 
+
+>>> 2 + 2
+4
+
+>>> 3 * 3
+10
+
+
+Now we're going to take some more of doctest's syntax for a spin.
+
+>>> import sys
+>>> def test_write():
+...     sys.stdout.write("Hello\n")
+...     return True
+>>> test_write()
+Hello
+True
+
+
+Here we use doctest's exception syntax to check that Python is correctly enforcing its grammar. The error is missing a ) on the def line.
+
+>>> def faulty(:
+...     yield from [1, 2, 3,  4, 5]
+Traceback (most recent call last):
+SyntaxError: invalid syntax
+
+
